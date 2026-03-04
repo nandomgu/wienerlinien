@@ -43,7 +43,7 @@ get.wiener.times <- function(stop.id=NULL,stop.alias=NULL, max.window=15) {
   }else{
   
   # Format output
-result=lapply(departures, function(line) line$departures.departure %>% as.data.frame %>% dplyr::mutate(line=vehicle.name,dest=vehicle.towards,when=departureTime.timePlanned, countdown=departureTime.countdown) %>% dplyr::select(line, dest, when, countdown)) %>% bind_rows %>% dplyr::filter(countdown<max.window)
+result=lapply(departures, function(line) line$departures.departure %>% as.data.frame %>% dplyr::mutate(stop.id=!!stop.id, stop.alias=!!stop.alias,line=vehicle.name,dest=vehicle.towards,when=departureTime.timePlanned, countdown=departureTime.countdown) %>% dplyr::select(stop.id, stop.alias, line, dest, when, countdown)) %>% bind_rows %>% dplyr::filter(countdown<max.window)
   }
   
   return(result)
