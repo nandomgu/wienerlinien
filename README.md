@@ -21,8 +21,8 @@ hoow to use:
 4. call the function:
 ```{r}
 get_wiener_times(<STOPID>, max_window=15) # services coming in the next 15 minutes
-#or
-get_wiener_times(stop_alias=<STOPID>, max_window=15)
+#or if you added an alias or know it
+get_wiener_times(stop_alias=<STOP ALIAS>, max_window=15)
 ```
 or
 
