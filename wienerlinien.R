@@ -1,9 +1,9 @@
-get.wiener.times <- function(stop.id=NULL,stop.alias=NULL, max.window=15) {
+get_wiener_times <- function(stop_id=NULL,stop_alias=NULL, max_window=15) {
   library(httr)
   library(jsonlite)
   library(dplyr)
   
-  if(!is.null(stop.alias)){
+  if(!is.null(stop_alias)){
   stop.ref=list(
    "CBR2prater"=381,
    "CBR2westbhf"=355,
@@ -16,7 +16,7 @@ get.wiener.times <- function(stop.id=NULL,stop.alias=NULL, max.window=15) {
    "gumpU6flor"=4618,
    "gumpU6sieb"=4611
   )
-  stop.id=stop.ref[[stop.alias]]
+  stop_id=stop.ref[[stop_alias]]
   }
   # Wiener Linien Monitor API endpoint
   base_url <- "https://www.wienerlinien.at/ogd_realtime/monitor"
@@ -25,7 +25,7 @@ get.wiener.times <- function(stop.id=NULL,stop.alias=NULL, max.window=15) {
   
   response <- GET(
     url = base_url,
-    query = list(stopId = stop.id)
+    query = list(stopId = stop_id)
   )
   
   # Check for errors
@@ -43,7 +43,7 @@ get.wiener.times <- function(stop.id=NULL,stop.alias=NULL, max.window=15) {
   }else{
   
   # Format output
-result=lapply(departures, function(line) line$departures.departure %>% as.data.frame %>% dplyr::mutate(stop.id=!!stop.id, stop.alias=!!stop.alias,line=vehicle.name,dest=vehicle.towards,when=departureTime.timePlanned, countdown=departureTime.countdown) %>% dplyr::select(stop.id, stop.alias, line, dest, when, countdown)) %>% bind_rows %>% dplyr::filter(countdown<max.window)
+result=lapply(departures, function(line) line$departures.departure %>% as.data.frame %>% dplyr::mutate(stop_id=!!stop_id, stop_alias=!!stop_alias,line=vehicle.name,dest=vehicle.towards,when=departureTime.timePlanned, countdown=departureTime.countdown) %>% dplyr::select(stop_id, stop_alias, line, dest, when, countdown)) %>% bind_rows %>% dplyr::filter(countdown<max_window)
   }
   
   return(result)
