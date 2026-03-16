@@ -6,15 +6,17 @@ the functions are provided both for python and R.
 
 ### Repository contents
 
--wienerlinien.R
+-wienerlinien.R (function in R)
 
--wienerlinien.py
+-wienerlinien.py (function in python)
 
--stopids.csv
+-stopids.csv (search for the id of your stop)
 
 -tram_times.py (executable python code from shell)
 
 -run_tram_monitor.sh (shell script that loops through the python script every few seconds)
+
+-tramtimes.html (display the csv in a browser)
 
 ### How to use:
 
