@@ -4,7 +4,7 @@ Retrieve real-time public transport departure information from the Wiener Linien
 
 the functions are provided both for python and R. 
 
-### contents
+### Repository contents
 
 -wienerlinien.R
 
@@ -16,7 +16,7 @@ the functions are provided both for python and R.
 
 -run_tram_monitor.sh (shell script that loops through the python script every few seconds)
 
-how to use:
+### How to use:
 
 1. Locate the stop ID for your desired Vienna stop
 
