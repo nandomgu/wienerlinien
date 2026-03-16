@@ -7,9 +7,13 @@ the functions are provided both for python and R.
 ### contents
 
 -wienerlinien.R
+
 -wienerlinien.py
+
 -stopids.csv
+
 -tram_times.py (executable python code fromm shell)
+
 -run_tram_monitor.sh (shell script that loops through the python script every few seconds)
 
 how to use:
