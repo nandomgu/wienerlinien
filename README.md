@@ -9,8 +9,10 @@ the functions are provided both for python and R.
 -wienerlinien.R
 -wienerlinien.py
 -stopids.csv
+-tram_times.py (executable python code fromm shell)
+-run_tram_monitor.sh (shell script that loops through the python script every few seconds)
 
-hoow to use:
+how to use:
 
 1. Locate the stop ID for your desired Vienna stop
 
@@ -18,13 +20,36 @@ hoow to use:
 
 2. copy and paste the function into  your R/python
 3. (optional) include an alias for your stop inside the list/dictionary of the aliases in the function. For example, "CBR2prater" is an alias for the tram stop 387 right in front of cbr.
-4. call the function:
+4a. To run from a python or R session, call the function:
 ```{r}
 get_wiener_times(<STOPID>, max_window=15) # services coming in the next 15 minutes
 #or if you added an alias or know it
 get_wiener_times(stop_alias=<STOP ALIAS>, max_window=15)
 ```
-or
+4b. alternatively, run the function in a loop and update tramtimes.csv every few seconds:
+
+First, make the shell script executable
+```{bash}
+chmod -x run_tram_monitor.sh
+```
+Second, enter this to run the script in the background:
+
+```{bash}
+nohup ./run_tram_monitor.sh > tram_monitor.log 2>&1 &
+```
+Once the above is executing, you can look at at the table from the command line doing
+
+```{bash}
+column -s -t tramtimes.csv
+```
+
+or simply show the times in plain .csv format
+
+```{bash}
+cat tramtimes.csv
+```
+
+
 
 
 ## `get_wiener_times()`
