@@ -12,7 +12,7 @@ the functions are provided both for python and R.
 
 -stopids.csv
 
--tram_times.py (executable python code fromm shell)
+-tram_times.py (executable python code from shell)
 
 -run_tram_monitor.sh (shell script that loops through the python script every few seconds)
 
