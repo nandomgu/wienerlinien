@@ -18,7 +18,7 @@ how to use:
 
 Method a) Use the stopids.csv for reference, find the name of your stop, and confirm with the GPS coordinates. 
  
- Method b) seek the specific service on https://www.wienerlinien.at/fahrplaene -> pick the desired service and open the services pdf, look for your stop and  check the bottom right corner. for example, here are the stops of the U6 U-bahn [https://www.wienerlinien.at/documents/11594409/29526878/fahrplan-metro-u6--schulplan-kein-halt-in-der-station-tscherttegasse-in-fahrtrichtung-siebenhirten-wegen-bahnsteigsanierung-ausnahme-mo-do-von-22-uhr-bis-betriebsschluss-siebenhirten-floridsdorf.pdf/f6516287-df25-fec8-b82c-0f10446739c5?version=1.1&t=1769595795494]
+ Method b) seek the specific service on https://www.wienerlinien.at/fahrplaene -> pick the desired service and open the services pdf, look for your stop and look for "Haltestelle" in the bottom right corner. for example, here are the stops of the U6 U-bahn [https://www.wienerlinien.at/documents/11594409/29526878/fahrplan-metro-u6--schulplan-kein-halt-in-der-station-tscherttegasse-in-fahrtrichtung-siebenhirten-wegen-bahnsteigsanierung-ausnahme-mo-do-von-22-uhr-bis-betriebsschluss-siebenhirten-floridsdorf.pdf/f6516287-df25-fec8-b82c-0f10446739c5?version=1.1&t=1769595795494]
 
 2. copy and paste the function into  your R/python
    
