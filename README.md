@@ -16,10 +16,14 @@ how to use:
 
 1. Locate the stop ID for your desired Vienna stop
 
- Use the stopids.csv for reference, or seek the specific service on https://www.wienerlinien.at/fahrplaene -> pick the desired service and open the services pdf, look for your stop and  check the bottom right corner. for example, here are the stops of the U1 U-bahn https://www.wienerlinien.at/documents/11594409/11604245/fahrplan-metro-u1-oberlaa-leopoldau.pdf/af987b85-1837-b694-472b-e907b0db01ec?version=1.0&t=1760333266535
+Method a) Use the stopids.csv for reference, find the name of your stop, and confirm with the GPS coordinates. 
+ 
+ Method b) seek the specific service on https://www.wienerlinien.at/fahrplaene -> pick the desired service and open the services pdf, look for your stop and  check the bottom right corner. for example, here are the stops of the U1 U-bahn https://www.wienerlinien.at/documents/11594409/11604245/fahrplan-metro-u1-oberlaa-leopoldau.pdf/af987b85-1837-b694-472b-e907b0db01ec?version=1.0&t=1760333266535
 
 2. copy and paste the function into  your R/python
+   
 3. (optional) include an alias for your stop inside the list/dictionary of the aliases in the function. For example, "CBR2prater" is an alias for the tram stop 387 right in front of cbr.
+   
 4a. To run from a python or R session, call the function:
 ```{r}
 get_wiener_times(<STOPID>, max_window=15) # services coming in the next 15 minutes
@@ -49,7 +53,7 @@ or simply show the times in plain .csv format
 cat tramtimes.csv
 ```
 
-
+### further details about the functions.
 
 
 ## `get_wiener_times()`
@@ -99,3 +103,5 @@ If no departures are found, the function returns a message indicating that no re
 ```python
 df = get_wiener_times(stop_alias="westbhfU6flor", max_window=10)
 print(df)
+```
+
