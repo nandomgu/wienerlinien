@@ -1,0 +1,64 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/home/lmontano/tram_times.py", line 74, in <module>
+    df = get_wiener_times(stop_alias=["CBR2prater", "CBR2westbhf"], max_window=15)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lmontano/tram_times.py", line 45, in get_wiener_times
+    r.raise_for_status()
+  File "/home/lmontano/yes/envs/ai-image/lib/python3.11/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.wienerlinien.at/ogd_realtime/monitor?stopId=355
+Traceback (most recent call last):
+  File "/home/lmontano/tram_times.py", line 74, in <module>
+    df = get_wiener_times(stop_alias=["CBR2prater", "CBR2westbhf"], max_window=15)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lmontano/tram_times.py", line 45, in get_wiener_times
+    r.raise_for_status()
+  File "/home/lmontano/yes/envs/ai-image/lib/python3.11/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.wienerlinien.at/ogd_realtime/monitor?stopId=355
+Traceback (most recent call last):
+  File "/home/lmontano/tram_times.py", line 74, in <module>
+    df = get_wiener_times(stop_alias=["CBR2prater", "CBR2westbhf"], max_window=15)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lmontano/tram_times.py", line 45, in get_wiener_times
+    r.raise_for_status()
+  File "/home/lmontano/yes/envs/ai-image/lib/python3.11/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.wienerlinien.at/ogd_realtime/monitor?stopId=381
+Traceback (most recent call last):
+  File "/home/lmontano/tram_times.py", line 74, in <module>
+    df = get_wiener_times(stop_alias=["CBR2prater", "CBR2westbhf"], max_window=15)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lmontano/tram_times.py", line 45, in get_wiener_times
+    r.raise_for_status()
+  File "/home/lmontano/yes/envs/ai-image/lib/python3.11/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.wienerlinien.at/ogd_realtime/monitor?stopId=355
+Traceback (most recent call last):
+  File "/home/lmontano/tram_times.py", line 74, in <module>
+    df = get_wiener_times(stop_alias=["CBR2prater", "CBR2westbhf"], max_window=15)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lmontano/tram_times.py", line 45, in get_wiener_times
+    r.raise_for_status()
+  File "/home/lmontano/yes/envs/ai-image/lib/python3.11/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.wienerlinien.at/ogd_realtime/monitor?stopId=355
+Traceback (most recent call last):
+  File "/home/lmontano/tram_times.py", line 74, in <module>
+    df = get_wiener_times(stop_alias=["CBR2prater", "CBR2westbhf"], max_window=15)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lmontano/tram_times.py", line 45, in get_wiener_times
+    r.raise_for_status()
+  File "/home/lmontano/yes/envs/ai-image/lib/python3.11/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.wienerlinien.at/ogd_realtime/monitor?stopId=381
+Traceback (most recent call last):
+  File "/home/lmontano/tram_times.py", line 74, in <module>
+    df = get_wiener_times(stop_alias=["CBR2prater", "CBR2westbhf"], max_window=15)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lmontano/tram_times.py", line 45, in get_wiener_times
+    r.raise_for_status()
+  File "/home/lmontano/yes/envs/ai-image/lib/python3.11/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.wienerlinien.at/ogd_realtime/monitor?stopId=355
